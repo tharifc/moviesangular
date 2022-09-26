@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <form action="" [formGroup]="reviewform" (ngSubmit)="submitReviewForm()">
+                <div class="mb-3">
+                    <input type="number" placeholder="rating" formControlName="rating">
+                </div>
+                <div class="mb-3">
+                    <input type="text" placeholder="enter your review" formControlName="content">
+                </div>
+                <div class="mb-3">
+                    <input type="submit" value="add review">
+                </div>
+
+            </form>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
